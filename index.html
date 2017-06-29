@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title></title>
+		<style>
+			body,html,#big{
+				width:100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			.page{
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			.clear{
+				clear: both;
+			}
+			/*第一页*/
+		
+			#page1{
+				background-image: url(img/house.jpg);
+				background-size: 100% 100%;
+			}
+			.photo{
+				width: 15rem;
+				height: 14rem;
+				position: absolute;
+				top: 3rem;
+				left: 2rem;
+			}
+			#words{
+				width:15rem;
+				height: 15.5rem;
+				background-color: white;
+				/*color: greene;*/
+				font-family: "微软雅黑";
+				position: absolute;
+				top: 17rem;
+				left: 2rem;
+				text-align: center;
+				font-size: 0.8rem;
+			}
+			#name{
+				color: #00c091;
+				font-weight: 600;
+				margin-top: 1rem;
+			}
+			#job{
+				width: 11rem;
+				height: 1.8rem;
+				line-height: 1.8rem;
+				text-align: center;
+				color: #00C091;
+				border: 1px solid #00C091;
+			   margin-left:2.2rem ;
+			   font-size: 1rem;
+			}
+			.introduce{
+				width: 12rem;
+				text-align: left;
+				margin-left: 2.5rem;
+				margin-top: 2.1rem;
+			}
+			.words-bottom{
+				width: 15rem;
+				height: 1rem;
+				background-color:#00C091;
+				margin-top: 0.5rem;
+			}
+			/*第二页*/
+			.self{
+				color:#00C091;
+				text-align: center;
+				margin-top: 4rem;
+			}
+			#page2{
+				font-size: 0.9rem;
+			}
+			.line{
+				width: 100%;
+				height: 0.1rem;
+				background-color: gainsboro;
+			}
+			.ab-left{
+				width: 40%;
+				float: left;
+				margin-left: 0.6rem;
+			}
+			.ab-right{
+				width: 55%;
+				float: right;
+				white-space: normal;
+			}
+			.project{
+				margin-left: 0.6rem;
+				margin-top: 2rem;
+			}
+			.next{
+				width: 8rem;
+				height: 3rem;
+				line-height:3rem ;
+				margin-left: 5rem;
+				margin-top: 3.5rem;
+				text-align: center;
+				border:1px solid #00C091;
+			}
+			/*第三页*/
+			.myself,.myself2{
+				width: 80%;
+				line-height: 2rem;
+				margin-left: 10%;
+				margin-top: 2rem;
+			}
+			/*第四页*/
+			.self2{
+				margin-top: .5rem;
+				color: #00C091;
+				text-align: center;
+			}
+			.myself2{
+				margin-top: 0.5rem;
+			}
+			/*第五页*/
+			.thanks{
+				font-size: 3rem;
+				color: #00C091;
+				font-family: monaco;
+				transition: all 3s;
+				animation: thanks 3s infinite;
+			}
+			@keyframes thanks{
+				from{transform: translateX(-15rem);}
+				to{transform: translateX(1.5rem);}
+			}
+			.flower-div{
+				width: 15rem;
+				height: 15rem;
+				border-radius: 10% 50% 50% 50%;
+				overflow: hidden;
+				margin-left: 2.5rem;
+			}
+			.flower{
+				width: 100%;
+				height: 100%;
+				animation: flower 3s infinite;
+			}
+			/*@keyframes flower{
+				from{transform: rotate(-360deg);}
+				to{transform: rotate(360deg);}
+			}*/
+			html{font-size:16px;font-family: helvetica,"microsoft yahei";}
+			@media only screen and (min-width:320px){html {font-size: 17.2px!important;}}
+			@media only screen and (min-width:360px){html {font-size: 19.2px!important;}}
+			@media only screen and (min-width:375px){html {font-size: 20px!important;}}
+			@media only screen and (min-width:400px){html {font-size:21.33px!important;}}
+			@media only screen and (min-width:414px){html {font-size:22.08px!important;}}
+			@media only screen and (min-width:480px){html {font-size:25.6px!important;}}
+			@media only screen and (min-width:640px){html {font-size: 34.4px!important;}}
+		</style>
+	</head>
+	<body>
+		<div id="big">
+			<div id="page1" class="page">
+				<div id="picture" class="picture">
+					<img src="img/IMG_7421.JPG" id="photo" class="photo"/>
+				</div>
+				<div id="words">
+					<h2 id="name">吴思</h2>
+					<div id="job">求职目标：前端实习</div>
+					<div class="introduce">
+						<p id="age">年龄：23岁</p>
+						<p id="direction">地址：上海市宝山区</p>
+						<p id="phone">电话：13657445900</p>
+						<p id="email">邮箱：W_josephine@163.com</p>
+					</div>
+					<div class="words-bottom"></div>
+				</div>
+			</div>
+			<div id="page2" class="page">
+				<h1 class="self">About me</h1>
+				<p class="line"></p>
+				<div class="ab-left">
+					<p>姓名：吴思</p>
+					<p>性别：女</p>
+					<p>出生：1994.12.3</p>
+					<p>居住：宝山区</p>
+					<p>学历：本科</p>
+				</div>
+				<div class="ab-right">
+					<p>手机：13657445900</p>
+					<p>qq:1173617951</p>
+					<p>户籍：湖南省汨罗市</p>
+					<p>学校：中南大学</p>
+					<p>邮箱：W_josephine@163.com</p>
+				</div>
+				<div class="clear"></div>
+				<div class="project">
+					<p>项目：<1> 仿oppo静态页面;</p>
+					<p>&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp <2> 仿网易云音乐;</p>
+					<p>&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp <3> bootstrap响应式; </p>
+					<p>&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp <4> 移动端麻将算;</p>
+					<p>&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp <5> 仿哔哩哔哩动画</p>
+				</div>
+				<div class="next">
+					NEXT
+				</div>
+			</div>
+			<div id="page3" class="page">
+				<h1 class="self">自我评价</h1>
+				<p class="line"></p>
+				<p class="myself">
+					热爱编程，喜欢技术，喜欢折腾。
+					熟练掌握HTML5+CSS3
+					熟悉Javascript，会用JQuery及使用JQuery插件
+					熟悉前端框架Bootstrap等
+					熟练使用PS,了解各类UI工具
+					善于表达、普通话标准、良好的英语口语和书写能力
+					理性冷静，具有良好的独立思考和自主学习能力；乐观开朗，富有团队精神，能够和同事相互协作和充分的沟通；积极正面，在压力和困难面前有很好的分析能力和解决问题能力
+				</p>
+			</div>
+			<div id="page4" class="page">
+				<h2 class="self">职业技能</h2>
+				<p class="line"></p>
+				<p class="myself">
+					1.会点小设计~不精湛<br />
+					2.精通HTML+CSS，并能快速处理各浏览器兼容问题；<br />
+					3.熟练掌握Javascript；<br />
+					4.熟悉使用JS框架，JQuery等;<br />
+					5.熟悉Ajax技术；<br />
+					6.熟练HTML5和CSS3技术（主要用于移动应用开发）；<br />
+					7.未完待续...一直在努力进步。
+				</p>
+				<h3 class="self2">技能证书</h3>
+				<p class="line"></p>
+				<p class="myself2">
+					Pets3,良好的听说读写能力
+					计算机二级，熟悉计算机各项操作
+					跆拳道黑带一段
+				</p>
+			</div>
+			<div id="page5" class="page">
+				<h3 class="self2">兴趣爱好</h3>
+				<p class="line"></p>
+				<p class="myself">
+					看书、听歌、运动、发呆~
+				</p>
+				<div class="welcome">
+					<p class="thanks">多谢欣赏~</p>
+					<div class="flower-div">
+						<img src="img/flower.jpg" class="flower" />
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
